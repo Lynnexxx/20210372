@@ -11,13 +11,15 @@
 - Packager le code dans une image Docker
 - Mettre à disposition l'image sur DockerHub
 
-                              Développement                          
-1- Wrapper
+                              Développement  
+                              
+                              
+      1- Wrapper
 
 Dans le fichier weather.py la fonction permet d'afficher la météo en fonction de la latitude et la longitude données.  Ces dernières ainsi que la clé API sont récupérées à partir des variables d'environnement à l'aide de la bibliothèque os. Il construit ensuite l'URL du point de terminaison de l'API avec la latitude, la longitude et la clé API données, et effectue une requête GET pour récupérer les données météorologiques. Enfin, il renvoie la réponse au format JSON.
   
  
-2- Packaging du code dans une image Docker
+    2- Packaging du code dans une image Docker
 
   docker build . -t first:1.0.0
   docker tag first:1.0.0 lynnxx/first:1.0.0
@@ -26,11 +28,11 @@ Dans le fichier weather.py la fonction permet d'afficher la météo en fonction 
 Le Dockerfile utilisé démarre avec une image de base qui inclut Python 3.9, copie le script weather.py dans l'image, définit le répertoire de travail sur   /app et exécute le script weather.py au démarrage du conteneur.
 
 
-3- Mise à disposition de l'image sur DockerHub
+    3- Mise à disposition de l'image sur DockerHub
 docker push lynnxx/firstly:1.0.0
 
 
-4- Test du fonctionnement de l'API
+    4- Test du fonctionnement de l'API
 docker pull lynnxx/first:1.0.0 
 docker run --env LAT="31.2504" --env LONG="-99.2506" --env API_KEY=**** lynnxx/first:1.0.0
 On remarque qu'en fonction des données entrées, nous obtenons effectivement la météo en fonction de la situation géographique
