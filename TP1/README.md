@@ -4,7 +4,7 @@
                                                   
                                 TP 1 : Docker
     
-                                            Objectifs
+                                             OBJECTIFS
 
 - Créer un wrapper qui retourne la météo d'un lieu donné avec sa latitude et sa longitude
 (passées en variable d'environnement) en utilisant openweather API et python comme langage de programmation 
