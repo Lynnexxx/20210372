@@ -40,10 +40,11 @@ On remarque qu'en fonction des données entrées, nous obtenons effectivement la
 
                                             Bonus
 
-
-0 CVE (trivy) : trivy image lynnxx/first:1.0.0
-Il est à noter que cela dépend de l'image avec laquelle démarre le Dockerfile. Une image avec beaucoup moins de vulnérabilités donnera beaucoup moins de CVE
-0 lint errors on Dockerfile (hadolint) : docker run --rm -i hadolint/hadolint < Dockerfile
-Aucune donnée sensible stockée dans l'image : Pour cela, l'API key est une variable d'environnement. Elle ne parait pas dans le wrapper.
+    0 CVE (trivy) : trivy image lynnxx/first:1.0.0
+    Il est à noter que cela dépend de l'image avec laquelle démarre le Dockerfile. Une image avec beaucoup moins de vulnérabilités donnera beaucoup moins de CVE
+     
+     0 lint errors on Dockerfile (hadolint) : docker run --rm -i hadolint/hadolint < Dockerfile
+     
+     Aucune donnée sensible stockée dans l'image : Pour cela, l'API key est une variable d'environnement. Elle ne parait pas dans le wrapper.
 
 
