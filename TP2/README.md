@@ -17,13 +17,13 @@
 Pour configurer le workflow, on s'est basé sur le code de configuration présent dans le cours, puis à cela des lignes de code ont été ajoutées. 
 Les lignes de code ajoutées sont basées sur une configuration particulière. Les lignes de code suivantes détaillent les pré-configurations:
 
--Ouvrez les paramètres du référentiel et accédez à Secrets > Actions.
+ - Ouvrez les paramètres du référentiel et accédez à Secrets > Actions.
 
--Créez un nouveau secret nommé DOCKERHUB_USERNAME et votre ID Docker comme valeur.
+ - Créez un nouveau secret nommé DOCKERHUB_USERNAME et votre ID Docker comme valeur.
 
--Créez un nouveau jeton d'accès personnel (PAT) pour Docker Hub. Vous pouvez nommer ce jeton clockboxci.
+ - Créez un nouveau jeton d'accès personnel (PAT) pour Docker Hub. Vous pouvez nommer ce jeton clockboxci.
 
--Ajoutez le PAT en tant que deuxième secret dans votre référentiel GitHub, avec le nom DOCKERHUB_TOKEN.  
+ - Ajoutez le PAT en tant que deuxième secret dans votre référentiel GitHub, avec le nom DOCKERHUB_TOKEN.  
   
  
     2- Transformer un wrapper en API
@@ -45,7 +45,7 @@ On remarque qu'en fonction des données entrées, nous obtenons effectivement la
                                             Bonus
 
 Add hadolint to Github workflow before build+push and failed on errors : cette tâche est prise en compte par les lignes de code suivantes.
-   - uses: hadolint/hadolint-action@v3.1.0
+- uses: hadolint/hadolint-action@v3.1.0
        with:
          dockerfile: TP2/Dockerfile
 
