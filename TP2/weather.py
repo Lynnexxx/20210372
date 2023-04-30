@@ -11,12 +11,8 @@ from sys import argv
 app = Flask(__name__)
 
 
-@app.route("/")
-def hello():
-    print(argv[1])
-    return "Hello World!"
+@app.route("/",methods =['GET'])
 
-@app.route('/api/meteo/',methods =['GET'])
 def get_weather_api():
     lat = request.args.get('lat')
     lon = request.args.get('lon')
@@ -38,7 +34,7 @@ def get_weather_api():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port= 8081)
 
     get_weather_api()
 
