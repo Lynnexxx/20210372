@@ -38,8 +38,7 @@ docker run --env LAT="31.2504" --env LONG="-99.2506" --env API_KEY=**** lynnxx/f
 On remarque qu'en fonction des données entrées, nous obtenons effectivement la météo en fonction de la situation géographique
 
 
-
-                                          Bonus
+                                            Bonus
 
 
 0 CVE (trivy) : trivy image lynnxx/first:1.0.0
