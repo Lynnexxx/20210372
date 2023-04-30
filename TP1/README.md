@@ -20,10 +20,9 @@ Dans le fichier weather.py la fonction permet d'afficher la météo en fonction 
   
  
     2- Packaging du code dans une image Docker
-
-  docker build . -t first:1.0.0
-  docker tag first:1.0.0 lynnxx/first:1.0.0
-  docker push lynnxx/first:1.0.0
+    -  docker build . -t first:1.0.0
+    -  docker tag first:1.0.0 lynnxx/first:1.0.0
+    -  docker push lynnxx/first:1.0.0
   
   
 
