@@ -12,7 +12,6 @@
 
                                             Développement  
                               
-                              
       1- Configuration du workflow Github Action
 Pour configurer le workflow, on s'est basé sur le code de configuration présent dans le cours, puis à cela des lignes de code ont été ajoutées. 
 Les lignes de code ajoutées sont basées sur une configuration particulière. Les lignes de code suivantes détaillent les pré-configurations:
@@ -26,7 +25,7 @@ Les lignes de code ajoutées sont basées sur une configuration particulière. L
  - Ajoutez le PAT en tant que deuxième secret dans votre référentiel GitHub, avec le nom DOCKERHUB_TOKEN.  
   
 
-        2- Transformer un wrapper en API
+       2- Transformer un wrapper en API
 
 Le wrapper du TP1 a été transformé en API grâce à Flask, un framework python. Ainsi en configurant les routes, nous pouvons accéder à la météo après avoir fournis la latitude et la longitude.
   -   http://localhost:8081/?lat=5.902785&lon=102.754175 nous permet d'avoir accès à la météo avec pour latitude 5.902785 et longitude 102.754175 
