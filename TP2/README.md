@@ -6,9 +6,9 @@
     
                                              OBJECTIFS
 
--Configurer un workflow Github Action
--Transformer un wrapper en API
--Publier automatiquement à chaque push sur Docker Hub
+- Configurer un workflow Github Action
+- Transformer un wrapper en API
+- Publier automatiquement à chaque push sur Docker Hub
 
                                             Développement  
                               
@@ -32,7 +32,7 @@ Le wrapper du TP1 a été transformé en API grâce à Flask, un framework pytho
 http://localhost:8081/?lat=5.902785&lon=102.754175 nous permet d'avoir accès à la météo avec pour latitude 5.902785 et longitude 102.754175 
 
 
-    3-Publier automatiquement a chaque push sur Docker Hub
+    3- Publier automatiquement a chaque push sur Docker Hub
 Le build et le push permettent de publier sur docker hub
 
 
@@ -44,13 +44,10 @@ On remarque qu'en fonction des données entrées, nous obtenons effectivement la
 
                                             Bonus
 
-
-
 Add hadolint to Github workflow before build+push and failed on errors : cette tâche est prise en compte par les lignes de code suivantes.
       - uses: hadolint/hadolint-action@v3.1.0
         with:
           dockerfile: TP2/Dockerfile
 
 Aucune donnée sensible stockée dans l'image : Pour cela, l'API key est une variable d'environnement. Elle ne parait pas dans le wrapper.
-
 
