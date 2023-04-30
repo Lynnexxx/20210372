@@ -4,14 +4,14 @@
                                                   
                                 TP 1 : Docker
     
-                                Objectifs
+                                            Objectifs
 
 - Créer un wrapper qui retourne la météo d'un lieu donné avec sa latitude et sa longitude
 (passées en variable d'environnement) en utilisant openweather API et python comme langage de programmation 
 - Packager le code dans une image Docker
 - Mettre à disposition l'image sur DockerHub
 
-                              Développement  
+                                            Développement  
                               
                               
       1- Wrapper
@@ -39,7 +39,7 @@ On remarque qu'en fonction des données entrées, nous obtenons effectivement la
 
 
 
-                                 Bonus
+                                          Bonus
 
 
 0 CVE (trivy) : trivy image lynnxx/first:1.0.0
