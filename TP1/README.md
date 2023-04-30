@@ -24,6 +24,8 @@ Dans le fichier weather.py la fonction permet d'afficher la météo en fonction 
   docker build . -t first:1.0.0
   docker tag first:1.0.0 lynnxx/first:1.0.0
   docker push lynnxx/first:1.0.0
+  
+  
 
 Le Dockerfile utilisé démarre avec une image de base qui inclut Python 3.9, copie le script weather.py dans l'image, définit le répertoire de travail sur   /app et exécute le script weather.py au démarrage du conteneur.
 
@@ -35,6 +37,7 @@ docker push lynnxx/firstly:1.0.0
     4- Test du fonctionnement de l'API
   -  docker pull lynnxx/first:1.0.0 
   -  docker run --env LAT="31.2504" --env LONG="-99.2506" --env API_KEY=**** lynnxx/first:1.0.0
+  
 On remarque qu'en fonction des données entrées, nous obtenons effectivement la météo en fonction de la situation géographique
 
 
